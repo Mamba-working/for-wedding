@@ -1,0 +1,32 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 100vh;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+}
